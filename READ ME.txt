@@ -1,0 +1,10 @@
+SCRIPTS:
+cnn1000.py - This code is designed to run on GPU clusters and is currently setup to sample 50,000 CRM and nCRM samples, each. Sampling lines have comments at the end to designate where they are.
+
+lengths.py - This code was separated into two parts (nCRM and CRM), so they could easily be ran concurrently on the HPC cluster. This filters out sequences under 1,000 bases long and saves the result as a CSV.
+
+stand_lengths.py - This code finds the midpoint of every sequence and adds/subtracts 500, saving the new values in the 'Start' and 'End' positions, so all sequences are the same length and can be used with the CNN, and overwrites the file.
+
+test_cnn.py - This code is what I used to learn TensorFlow/Keras and test for basic errors on the GPU cluster. It generates 5,000 sequences, half of which have a redetermined motif added to them, adds labels, and runs it through a basic CNN structure.
+
+visualize_lengths.py - This code was used to create histogram and bar plots of all the sequences and all the sequenecs above 1,000 bases long. For the bar graphs, the sequences are lumped into 500 base groups (i.e. a sequence 276 bases long would be in the 0-500 category), which are then plotted. At the end, the total count per group is output as text.
