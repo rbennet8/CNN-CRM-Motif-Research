@@ -10,16 +10,6 @@ def lengths(data):
     return lengths
 
 
-def parse(data):
-    filtered = pd.DataFrame(columns=['Names', 'Start', 'End', 'Length'])
-    for idx, _ in data.iterrows():
-        len = data.loc[idx, 2] - data.loc[idx, 1]
-        if len > 1000:
-            x = [data.loc[idx, 0], data.loc[idx, 1], data.loc[idx, 2], len]
-            filtered = filtered.append({'Names': data.loc[idx, 0], 'Start': data.loc[idx, 1], 'End': data.loc[idx, 2], 'Length': len}, ignore_index=True)
-    return filtered
-
-
 def plot_dict(lengths, data_lengths):
     plot_dict = {}
     for i in lengths:
@@ -32,20 +22,26 @@ def plot_dict(lengths, data_lengths):
 
 path_1 = "HumanNonCRMs.txt"
 data_1 = pd.read_csv(path_1, header=None, sep='\t')
-data_1_parsed = parse(data_1)
 data_1[3] = lengths(data_1)
 data_1.columns = ['Names', 'Start', 'End', 'Length']
+shortest = data_1["Length"]>1000
+longest = data_1["Length"]<10000
+data_1 = data_1.where(longest).dropna()
 data_1 = data_1.sort_values(by='Length')
-parsed_1 = data_1_parsed['Length'].tolist()
+parsed_1 = data_1.where(shortest).dropna()
+parsed_1 = parsed_1['Length'].tolist()
 parsed_1.sort()
 
 path_2 = "HumanCRMs.txt"
 data_2 = pd.read_csv(path_2, header=None, sep='\t')
-data_2_parsed = parse(data_2)
 data_2[3] = lengths(data_2)
 data_2.columns = ['Names', 'Start', 'End', 'Length']
+shortest = data_2["Length"]>1000
+longest = data_2["Length"]<10000
+data_2 = data_2.where(longest).dropna()
 data_2 = data_2.sort_values(by='Length')
-parsed_2 = data_2_parsed['Length'].tolist()
+parsed_2 = data_2.where(shortest).dropna()
+parsed_2 = parsed_2['Length'].tolist()
 parsed_2.sort()
 
 fig, ax = plt.subplots(figsize=(20, 15))

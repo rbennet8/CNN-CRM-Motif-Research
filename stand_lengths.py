@@ -12,5 +12,4 @@ for idx, rows in data_2.iterrows():
     mid = int((data_2.loc[idx, 1] + data_2.loc[idx, 2]) / 2)
     data_2.loc[idx, 1] = mid - 500
     data_2.loc[idx, 2] = mid + 500
-write_path_2 = "HumanCRMs1000.csv"
-data_2.to_csv(write_path_2, sep='\t', index = False, header = False)
+data_2.to_csv("HumanCRMs1000.csv", sep='\t', index = False, header = False)
