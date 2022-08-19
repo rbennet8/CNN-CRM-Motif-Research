@@ -1,0 +1,54 @@
+==========
+Start Time : Sun Feb 27 02:32:30 EST 2022
+Submit Dir : /users/rbennet8
+Job ID/Name : 342946 / Best Reg Params
+Num Tasks :  _NTASKS total [1 nodes @ 1 CPUs/node]
+==========
+
+TRAINING:
+Epoch 1/20
+11977/11977 - 2033s - loss: 319.3095 - accuracy: 0.8759
+Epoch 2/20
+11977/11977 - 2019s - loss: 312.1187 - accuracy: 0.9365
+Epoch 3/20
+11977/11977 - 2020s - loss: 312.2087 - accuracy: 0.9510
+Epoch 4/20
+11977/11977 - 2020s - loss: 312.2644 - accuracy: 0.9627
+Epoch 5/20
+11977/11977 - 2018s - loss: 312.3032 - accuracy: 0.9724
+Epoch 6/20
+11977/11977 - 2017s - loss: 312.3231 - accuracy: 0.9794
+Epoch 7/20
+11977/11977 - 2017s - loss: 312.3410 - accuracy: 0.9842
+Epoch 8/20
+11977/11977 - 2017s - loss: 312.3495 - accuracy: 0.9873
+Epoch 9/20
+11977/11977 - 2017s - loss: 312.3402 - accuracy: 0.9893
+Epoch 10/20
+11977/11977 - 2017s - loss: 312.3355 - accuracy: 0.9907
+Epoch 11/20
+11977/11977 - 2016s - loss: 312.3390 - accuracy: 0.9919
+Epoch 12/20
+11977/11977 - 2016s - loss: 312.3390 - accuracy: 0.9928
+Epoch 13/20
+11977/11977 - 2016s - loss: 312.3351 - accuracy: 0.9934
+Epoch 14/20
+11977/11977 - 2016s - loss: 312.3316 - accuracy: 0.9941
+Epoch 15/20
+11977/11977 - 2016s - loss: 312.3311 - accuracy: 0.9945
+Epoch 16/20
+11977/11977 - 2015s - loss: 312.3337 - accuracy: 0.9951
+Epoch 17/20
+11977/11977 - 2016s - loss: 312.3260 - accuracy: 0.9952
+Epoch 18/20
+11977/11977 - 2016s - loss: 312.3145 - accuracy: 0.9957
+Epoch 19/20
+11977/11977 - 2016s - loss: 312.3076 - accuracy: 0.9959
+Epoch 20/20
+11977/11977 - 2015s - loss: 312.2831 - accuracy: 0.9961
+VALIDATION:
+9357/9357 - 160s - loss: 317.1651 - accuracy: 0.9355
+
+==========
+End Time : Sun Feb 27 14:01:01 EST 2022
+==========

@@ -1,0 +1,34 @@
+==========
+Start Time : Sun Feb 27 19:45:25 EST 2022
+Submit Dir : /users/rbennet8
+Job ID/Name : 344836 / Best NoReg Params
+Num Tasks :  _NTASKS total [1 nodes @ 1 CPUs/node]
+==========
+
+TRAINING:
+Epoch 1/10
+12180/12180 - 2630s - loss: 0.2509 - accuracy: 0.9089
+Epoch 2/10
+12180/12180 - 2615s - loss: 0.1651 - accuracy: 0.9382
+Epoch 3/10
+12180/12180 - 2616s - loss: 0.1297 - accuracy: 0.9529
+Epoch 4/10
+12180/12180 - 2618s - loss: 0.1025 - accuracy: 0.9633
+Epoch 5/10
+12180/12180 - 2617s - loss: 0.0790 - accuracy: 0.9717
+Epoch 6/10
+12180/12180 - 2616s - loss: 0.0607 - accuracy: 0.9783
+Epoch 7/10
+12180/12180 - 2616s - loss: 0.0494 - accuracy: 0.9820
+Epoch 8/10
+12180/12180 - 2618s - loss: 0.0412 - accuracy: 0.9853
+Epoch 9/10
+12180/12180 - 2617s - loss: 0.0364 - accuracy: 0.9872
+Epoch 10/10
+12180/12180 - 2616s - loss: 0.0343 - accuracy: 0.9878
+VALIDATION:
+9516/9516 - 200s - loss: 0.6486 - accuracy: 0.9464
+
+==========
+End Time : Mon Feb 28 03:19:31 EST 2022
+==========

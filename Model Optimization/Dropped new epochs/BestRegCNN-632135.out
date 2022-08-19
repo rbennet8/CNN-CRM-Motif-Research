@@ -1,0 +1,26 @@
+==========
+Start Time : Mon Apr  4 03:47:37 EDT 2022
+Submit Dir : /users/rbennet8
+Job ID/Name : 632135 / Best Reg CNN
+Num Tasks :  _NTASKS total [1 nodes @ 1 CPUs/node]
+==========
+
+TRAINING:
+Epoch 1/6
+11977/11977 - 2285s - loss: 0.5165 - accuracy: 0.9193
+Epoch 2/6
+11977/11977 - 2271s - loss: 0.1407 - accuracy: 0.9561
+Epoch 3/6
+11977/11977 - 2271s - loss: 0.0852 - accuracy: 0.9763
+Epoch 4/6
+11977/11977 - 2270s - loss: 0.0554 - accuracy: 0.9861
+Epoch 5/6
+11977/11977 - 2270s - loss: 0.0414 - accuracy: 0.9903
+Epoch 6/6
+11977/11977 - 2270s - loss: 0.0337 - accuracy: 0.9926
+VALIDATION:
+9357/9357 - 179s - loss: 0.1909 - accuracy: 0.9482
+
+==========
+End Time : Mon Apr  4 07:50:55 EDT 2022
+==========
